@@ -1,11 +1,49 @@
 const Portfolio = () => {
     return (
-        <section>
-        <h2>Portfolio</h2>
-        <p>
-            I am a fullstack developer who has been learning Javascript since early 2024. 
-        </p>
-        </section>
+        <div>
+            <h1>Portfolio</h1>
+            <div id="project1">
+                <section>
+                    <h3>Project 1</h3>
+                    <a href="#">
+                        <img src="#"></img>
+                    </a>
+                    <p>A project</p>
+                </section>
+                <section>
+                    <div id="project1">
+                        <a href="#">
+                            <img src="#"></img>
+                        </a>
+                        <p>A project</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="project2">
+                        <a href="#">
+                            <img src="#"></img>
+                        </a>
+                        <p>A project</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="project3">
+                        <a href="#">
+                            <img src="#"></img>
+                        </a>
+                        <p>A project</p>
+                    </div>
+                </section >
+                <section>
+                    <div id="project4">
+                        <a href="#">
+                            <img src="#"></img>
+                        </a>
+                        <p>A project</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     )
 }
 
