@@ -8,8 +8,8 @@ This page was created to display Noah McKinzie's portfolio of work samples to a 
 
 Screenshot:
 
-![About me page](assets/Aboutme.jpeg)
-![Display page](assets/Projectdisplay.jpeg)
+![About me page](src/assets/Aboutme.jpeg)
+![Display page](src/assets/Projectdisplay.jpeg)
 
 Link to application:
 
