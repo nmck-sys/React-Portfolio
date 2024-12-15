@@ -6,6 +6,7 @@ const Resume = () => {
             <a href="#" className="resumeHTML">Go To Resume
             </a>
             <h3>
+                <h4>Developer Skills:</h4>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>

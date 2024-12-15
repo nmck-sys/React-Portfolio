@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../assets/Contact.css';
 
 export default function Contact() {
     const [name, setFormName] = useState('');
@@ -14,39 +15,37 @@ export default function Contact() {
         if (name === 'name') setFormName(value);
         if (name === 'email') setFormEmail(value);
         if (name === 'message') setFormMessage(value);
-
     };
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
         setIsSubmitting(true);
+        if (!name || !email || !message) {
+            setSubmissionStatus('Please provide all the required information.');
+            setIsSubmitting(false);
+            return;
+        }
+        setTimeout(() => {
+            setSubmissionStatus('Form submitted successfully!');
+            setIsSubmitting(false);
+        }, 2000);
+    };
 
-    if (!name || !email || !message) {
-        setSubmissionStatus('Please provide info.');
-        setIsSubmitting(false);
-        return;
-    }
-}
-    
-
-return (
-    <div className="contact-form">
-        <h1>Contact Me!</h1>
-        <div className="contact-container" onSubmit={handleFormSubmit}>
+    return (
+        <form className="contact-container" onSubmit={handleFormSubmit}>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" onChange={handleInputChange} />
+            <input type="text" id="name" name="name" value={name} onChange={handleInputChange} required />
+            
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" onChange={handleInputChange}/>
+            <input type="email" id="email" name="email" value={email} onChange={handleInputChange} required />
+            
             <label htmlFor="message">Message</label>
-            <textarea id="message" onChange={handleInputChange}></textarea>
-            <button className="submit-button">Submit</button>
-        </div>
-        <div className="form-group">
-          <button className="submit-button" type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
-          </button>
-        </div>
-        {submissionStatus && <p>{submissionStatus}</p>}
-    </div>
-);
+            <textarea id="message" name="message" value={message} onChange={handleInputChange} required></textarea>
+            
+            <button className="submit-button" type="submit" disabled={isSubmitting}>
+                {isSubmitting ? 'Submitting...' : 'Submit'}
+            </button>
+            {submissionStatus && <p>{submissionStatus}</p>}
+        </form>
+    );
 }
