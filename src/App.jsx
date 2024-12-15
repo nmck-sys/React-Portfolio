@@ -1,17 +1,19 @@
 import { Component } from 'react';
 import { Route, Routes } from 'react-router-dom'; 
-import Nav from './components/Nav';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
 
     return (
       <body>
-        <Nav />
+        <Header></Header>
         <main>
           <Routes>
             <Route path="/" element={<About />} /> 
@@ -21,6 +23,7 @@ class App extends Component {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
+        <Footer></Footer>
       </body>
     );
   }

@@ -1,48 +1,16 @@
+import Project from '../components/Project'
+
 const Portfolio = () => {
     return (
         <div>
             <h1>Portfolio</h1>
-            <div id="project1">
-                <section>
-                    <h3>Project 1</h3>
-                    <a href="#">
-                        <img src="#"></img>
-                    </a>
-                    <p>A project</p>
-                </section>
-                <section>
-                    <div id="project1">
-                        <a href="#">
-                            <img src="#"></img>
-                        </a>
-                        <p>A project</p>
-                    </div>
-                </section>
-                <section>
-                    <div id="project2">
-                        <a href="#">
-                            <img src="#"></img>
-                        </a>
-                        <p>A project</p>
-                    </div>
-                </section>
-                <section>
-                    <div id="project3">
-                        <a href="#">
-                            <img src="#"></img>
-                        </a>
-                        <p>A project</p>
-                    </div>
-                </section >
-                <section>
-                    <div id="project4">
-                        <a href="#">
-                            <img src="#"></img>
-                        </a>
-                        <p>A project</p>
-                    </div>
-                </section>
-            </div>
+ <Project Title="Project1" href="#" src="#" description="Description of Project1"/>
+
+ <Project Title="Project2" href="#" src="#" description="Description of Project2"/>
+
+ <Project Title="Project3" href="#" src="#" description="Description of Project3"/>
+
+ <Project Title="Project4" href="#" src="#" description="Description of Project4"/>
         </div>
     )
 }
