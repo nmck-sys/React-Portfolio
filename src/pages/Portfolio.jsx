@@ -2,7 +2,6 @@ import Project from '../components/Project'
 import gamerproject from '../assets/gamerbud.jpeg'
 import dmsanddms from '../assets/dmsanddms.jpeg'
 import catsanddogs from '../assets/Rainingcatsanddogs.jpeg'
-import '../assets/About.css'
 
 const Portfolio = () => {
     const imageStyles = {

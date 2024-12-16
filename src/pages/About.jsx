@@ -1,6 +1,5 @@
 import '../App.css';
 import profileImage from '../assets/Profile.jpeg';
-import '../assets/About.css'
 
 const About = () => {
     return (
