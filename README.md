@@ -13,4 +13,4 @@ Screenshot:
 
 Link to application:
 
-https://github.com/nmck-sys/React-Portfolio
+https://noahmckinziereactportfolio.netlify.app/
